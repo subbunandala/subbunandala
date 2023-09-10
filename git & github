@@ -1,0 +1,331 @@
+434  git --version
+  435  git config --list
+  436  git init local1
+  437  cd local1
+  438  git status
+  439  cd ..
+  440  mkdir local2
+  441  cd local2
+  442  git status
+  443  ls -la
+  444  cd ..
+  445  cd local1
+  446  ls -la
+  447  clear
+  448  cd ..
+  449  clear
+  450  git init 33b-local
+  451  cd 33b-local
+  452  touch file1
+  453  git status
+  454  git add file1
+  455  git status
+  456  git commit -m "add the file1 to repo" file1
+  457  git status
+  458  touch file2
+  459  ls -l
+  460  git add file2
+  461  git status
+  462  git commit -m "added file2 to repo" file2
+  463  touch file3
+  464  git add file3
+  465  git status
+  466  git commit -m "add file3 to repo" file3
+  467  ls -l
+  468  touch file4
+  469  ls -l
+  470  git status
+  471  git add file4
+  472  git status
+  473  git commit -m "added file4" file4
+  474  git status
+  475  vi file5-nations.txt
+  476  vi file5-nations.txt
+  477  vi file5-nations.txt
+  478  git status
+  479  git add file5-nations.txt
+  480  git status
+  481  git commit -m "added file5 to repo" file5-nations.txt
+  482  git status
+  483  touch file6 file7 file8
+  484  git status
+  485  git add file6 file7 file8
+  486  git status
+  487  git commit -m "adding f6 to 8 to repo" file6 file7 file8
+  488  git status
+  489  touch file9 file10 file11 file12
+  490  ls -l
+  491  git status
+  492  git add .
+  493  git status
+  494  git commit -m "adding f9 to 12" .
+  495  git status
+  496  ls -l
+  497  dir
+  498  git ls-files
+  499  git status
+  500
+  501  cd 33b-local
+  502  ls-l
+  503  ls -l
+  504  touch file13
+  505  git status
+  506  git add file13
+  507  git status
+  508  git commit -m "added file13" file13
+  509  git status
+  510  vi file5-nations.txt
+  511  git status
+  512  git add file5-nations.txt
+  513  git status
+  514  git commit -m "added file5" file5-nations.txt
+  515  git status
+  516  vi file5-nations.txt
+  517  git status
+  518  git add file5-nations.txt
+  519  git status
+  520  git commit -m "updated file5" file5-nations.txt
+  521  git status
+  522  git show
+  523  vi file5-nations.txt
+  524  git status
+  525  git add file5-nations.txt
+  526  git status
+  527  git commit -m "modified file5" file5-nations.txt
+  528  git status
+  529  git show
+  530  git log
+  531  git log --all
+  532  git log --oneline
+  533  git show 1684d7b
+  534  git show b4da6eb
+  535  vi file5-nations.txt
+  536  git status
+  537  git add file5-nations.txt
+  538  git status
+  539  git commit -m "removed other nations from file5" file5-nations.txt
+  540  git log --oneline
+  541  git show f3ac75d
+  542  git log --oneline
+  543  git status
+  544  ls -l
+  545  vi file14-capitals
+  546  git status
+  547  git add file14-capitals
+  548  git status
+  549  git reset HEAD
+  550  git status
+  551  vi file5-nations.txt
+  552  git add file5-nations.txt
+  553  git status
+  554  git reset HEAD
+  555  git status
+  556  git add file5-nations.txt file14-capitals
+  557  git status
+  558  git reset HEAD file5-nations.txt
+  559  git status
+  560  git add file5-nations.txt
+  561  git status
+  562  git commit -m "updated file5 and file14" .
+  563  git status
+  564  ls -l
+  565  git status
+  566  vi file14-capitals
+  567  git status
+  568  git add file14-capitals
+  569  git status
+  570  git commit -m "added some capitals" file14-capitals
+  571  git log --oneline
+  572  git revert 55d675e
+  573  vi file14-capitals
+  574  vi file5-nations.txt
+  575  git status
+  576  git add file5-nations.txt
+  577  git status
+  578  git commit -m "added months" file5-nations.txt
+  579  git log --oneline
+  580  git revert 4914182
+  581  git add file5-nations.txt
+  582  vi file5-nations.txt
+  583  git log --oneline
+  584  git revert 3ffcd78
+  585  vi file5-nations.txt
+  586
+  587  ls -l
+  588  git status
+  589  vi file5-nations.txt
+  590  git status
+  591  git add file5-nations.txt
+  592  git status
+  593  git reset HEAD
+  594  git status
+  595  vi file5-nations.txt
+  596  git add file5-nations.txt
+  597  git status
+  598  git reset HEAD
+  599  vi file5-nations.txt
+  600  git checkout -- file5-nations.txt
+  601  vi file5-nations.txt
+  602  vi file14-capitals
+  603  git status
+  604  git checkout -- file14-capitals
+  605  vi file14-capitals
+  606  git status
+  607  ls -l
+  608  git status
+  609  git rm file9
+  610  git status
+  611  git commit -m "deleted file9" file9
+  612  git status
+  613  ls -l
+  614  git status
+  615  git ls-files
+  616  git rm file8
+  617  git status
+  618  git commit -m "deleted file8" file8
+  619  git status
+  620  ls -l
+  621  git ls-files
+  622  git log --oneline
+  623  git revert ee7326d
+  624  git status
+  625  git ls-files
+  626  git log --oneline
+  627  git revert d607cc6
+  628  git status
+  629  git ls-files
+  630  ls -l
+  631  git status
+  632  git rm file5-nations.txt
+  633  git status
+  634  git reset HEAD
+  635  ls -l
+  636  git status
+  637  git ls-files
+  638  git checkout --file5-nations.txt
+  639  git checkout -- file5-nations.txt
+  640  git status
+  641  ls -l
+  642  git rm file14-capitals
+  643  git status
+  644  git reset HEAD
+  645  ls -l
+  646  git ls-files
+  647  git checkout -- file14-capitals
+  648  ls -l
+  649  git ls-files
+  650  git log --author="subbu"
+  651  git clone https://github.com/subbunandala/33b-remote-repo.git
+  652  ls -l 33b*
+  653  ls -l
+  654  pwd
+  655  cd ..
+  656  git clone https://github.com/subbunandala/33b-remote-repo.git
+  657  ls -l 33b*
+  658  cd 33b-remote-repo
+  659  cat README.md
+  660  cd ..
+  661  cd 33b-local
+  662  git config --list
+  663  git remote -v
+  664  cd ..
+  665  cd 33b-remote-repo
+  666  git remote -v
+  667  vi file1-local-pm.txt
+  668  git status
+  669  git add .
+  670  git status
+  671  git commit -m "added file1" .
+  672  git status
+  673  vi file2-local-cm.txt
+  674  git status
+  675  git add file2-local2-cm.txt
+  676  git status
+  677  git add file2-local-cm.txt
+  678  git status
+  679  git commit -m "added file2" file2-local-cm.txt
+  680  git status
+  681  git pull
+  682  git push
+  683  vi file3-rivers.txt
+  684  git status
+  685  git add .
+  686  git status
+  687  git commit -m "added file3" .
+  688  git status
+  689  git pull
+  690  git push
+  691  vi file4-health.txt
+  692  git status
+  693  git add .
+  694  git status
+  695  git commit -m "added file4" .
+  696  git status
+  697  git pull
+  698  ls -l
+  699  git ls-files
+  700  git pull
+  701  ls -l
+  702  git ls-files
+  703  git push
+  704  vi file4-health.txt
+  705  vi file4-health.txt
+  706  git pull
+  707  vi file4-health.txt
+  708  git pull
+  709  vi file4-health.txt
+  710  vi file5-war.txt
+  711  git status
+  712  git add .
+  713  git status
+  714  git commit -m "added file5" .
+  715  git status
+  716  git pull
+  717  git push
+  718  git pull
+  719  git push
+  720  ls -l
+  721  clear
+  722  ls -l
+  723  git status
+  724  git branch
+  725  git branch Hyd
+  726  git branch
+  727  git status
+  728  git checkout Hyd
+  729  ls -l
+  730  git status
+  731  vi file-br-hyd.txt
+  732  git status
+  733  git add .
+  734  git status
+  735  git commit -m "added a file in hyd br" .
+  736  ls -l
+  737  git status
+  738  git checkout main
+  739  git status
+  740  ls -l
+  741  git ls-files
+  742  git merge Hyd
+  743  ls -l
+  744  git ls-files
+  745  git pull
+  746  git push
+  747  git push
+  748  git branch Mumbai
+  749  git status
+  750  git branch
+  751  git checkout Mumbai
+  752  git status
+  753  vi file-Hyd-br-USA.txt
+  754  git status
+  755  git add .
+  756  git status
+  757  git commit -m "added file to mumbai br" .
+  758  git status
+  759  git branch
+  760  git checkout main
+  761  git merge mumbai
+  762  git pull
+  763  git push
+  764  history
